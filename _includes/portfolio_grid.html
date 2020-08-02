@@ -25,6 +25,14 @@
       </div>
 	{% endfor %}
     </div>
+    {%- if site.data.sitetext.portfolio.button -%}
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+                   href="{{ site.data.sitetext.portfolio.buttonlink }}">{{ site.data.sitetext.portfolio.button }}</a>
+            </div>
+        </div>
+        {%- endif -%}
   </div>
 </section>
 {% include modals.html %}
