@@ -19,7 +19,7 @@
               <div class="timeline-image">
                 <img class="rounded-circle img-fluid" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel" {%- if event.animation -%} data-aos="{{ event.animation }}" {%- endif -%}>
                 <div class="timeline-heading">
                   <h4>{{ event.year | markdownify }}</h4>
                   <h4 class="subheading">{{ event.title }}</h4>
