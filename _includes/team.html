@@ -28,11 +28,13 @@
             </div>
             {% endfor %}
         </div>
+        {%- if group.subtext -%}
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
                 <div class="large text-muted">{{ group.subtext | markdownify }}</div>
             </div>
         </div>
+        {%- endif -%}
         {%- if group.button -%}
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
