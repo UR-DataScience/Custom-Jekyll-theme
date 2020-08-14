@@ -29,5 +29,7 @@ analytics:
 
 collections:
   portfolio:
+  blog:
+  news:
 
 markdown: kramdown
